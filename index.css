@@ -1,0 +1,855 @@
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    background-size: cover;
+    background-image: url(./images/homepage_background.webp);
+}
+
+.navbar {
+    z-index: 9;
+    background-color: darkslategrey;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-button {
+    color: azure;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: x-large;
+    justify-content: center;
+}
+
+.nav-button:hover {
+    background-color: cornsilk;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.box1 {
+    background-color: rgba(255, 20, 28, 0.811);
+    margin-top: 80px;
+    width: 60%;
+    height: 400px;
+    padding: 50px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.box2 {
+    margin-top: 50px;
+    height: 400px;
+    text-align: center;
+}
+
+.head-intro {
+    line-height: 90px;
+    font-size: 60px;
+    color: rgb(0, 255, 72);
+}
+
+#prolink {
+    color: darkorange;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+#head {
+    text-align: left;
+    color: aliceblue;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(8, 96, 248);
+    width: 100%;
+    height: 50px;
+}
+
+.footid {
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 50px;
+    color: wheat;
+}
+
+.footid:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+
+/* project page */
+
+.animate-charcter {
+    background-image: linear-gradient( -225deg, #24d241 0%, #e96914 29%, #ff1361 67%, #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: block;
+    font-size: 100px;
+    text-align: center;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.project {
+    background-size: cover;
+    background-color: black;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+#project_name {
+    color: white;
+    display: none;
+    position: absolute;
+}
+
+.btns {
+    display: none;
+}
+
+.btns a {
+    padding: 5px;
+    margin: 20px;
+    background-color: rgb(63, 63, 187);
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.btns a i {
+    color: #fff;
+    size: 30px;
+}
+
+
+.box5,
+.box6,
+.box3,
+.box4 {
+    margin: 50px 0 50px 0;
+    width: 500px;
+    height: 300px;
+    text-decoration: underline;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.box5 img:hover+#project_name,
+.box6 img:hover+#project_name,
+.box3 img:hover+#project_name,
+.box4 img:hover+#project_name {
+    display: block
+}
+
+.box5 img:hover~.btns,
+.box6 img:hover~.btns,
+.box3 img:hover~.btns,
+.box4 img:hover~.btns {
+    display: block
+}
+
+.box5 img:hover,
+.box6 img:hover,
+.box3 img:hover,
+.box4 img:hover {
+    filter: blur(10px);
+}
+
+
+/* about page */
+
+.img-cont {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-cont img:hover {
+    filter: blur(10px);
+}
+
+.img-cont a {
+    position: absolute;
+    top: 350px;
+    text-decoration: none;
+    background-color: black;
+    padding: 5px;
+    border-radius: 50px;
+    color: white;
+    display: none;
+}
+
+.img-cont img:hover+a {
+    display: block;
+}
+
+.profile {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.myprofile {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.link {
+    text-decoration: underline;
+    margin: 0px 10px 0px 10px;
+    font-size: 15px;
+}
+
+.para {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.phra {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.skill{
+    background-color: rgb(200, 245, 245);
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+
+.html,
+.css,
+.javascript,
+.python,
+.bootstrap,
+.django {
+    padding: 50px 0px 50px 0px;
+}
+
+.html h3,
+.css h3,
+.javascript h3,
+.python h3,
+.bootstrap h3,
+.django h3 {
+    margin-left: 70px;
+}
+
+.skill-head h2{
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 100px;
+    font-size: 100px;
+    text-decoration: underline;
+}
+
+
+/* html */
+
+.circle-container {
+    width: 150px;
+    height: 150px;
+    background: #e1e1e1;
+    border-radius: 50%;
+    position: absolute;
+    top: 450px;
+    left: 340px;
+}
+
+.circle-container .circle .item,
+.circle-container .circle .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-container .circle .item {
+    clip: rect(0px, 150px, 150px, 64px);
+}
+
+.circle-container .circle .item .fill {
+    clip: rect(0px, 64px, 150px, 0px);
+    background-color: #ef1313d6;
+}
+
+.circle-container .circle .item.layer-1,
+.circle-container .circle .fill {
+    transform: rotate(160deg);
+}
+
+.inside-content {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: rgb(9, 249, 97);
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130px;
+}
+
+
+/* css */
+
+.circle-container1 {
+    width: 150px;
+    height: 150px;
+    background: #E1E1E1;
+    border-radius: 50%;
+    position: absolute;
+    top: 450px;
+    left: 700px;
+}
+
+.circle-container1 .circle .item,
+.circle-container1 .circle .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-container1 .circle .item {
+    clip: rect(0px, 150px, 150px, 64px);
+}
+
+.circle-container1 .circle .item .fill {
+    clip: rect(0px, 64px, 150px, 0px);
+    background-color: #129beb;
+}
+
+.circle-container1 .circle .item.layer-1,
+.circle-container1 .circle .fill {
+    transform: rotate(145deg);
+}
+
+.inside-content1 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #D5F2E3;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130px;
+}
+
+
+/* js */
+
+.circle-container2 {
+    width: 150px;
+    height: 150px;
+    background: #E1E1E1;
+    border-radius: 50%;
+    position: absolute;
+    top: 450px;
+    left: 1100px;
+}
+
+.circle-container2 .circle .item,
+.circle-container2 .circle .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-container2 .circle .item {
+    clip: rect(0px, 150px, 150px, 64px);
+}
+
+.circle-container2 .circle .item .fill {
+    clip: rect(0px, 64px, 150px, 0px);
+    background-color: #f8f415;
+}
+
+.circle-container2 .circle .item.layer-1,
+.circle-container2 .circle .fill {
+    transform: rotate(136deg);
+}
+
+.inside-content2 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #f52a34;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130px;
+}
+
+
+/* py */
+
+.circle-container3 {
+    width: 150px;
+    height: 150px;
+    background: #E1E1E1;
+    border-radius: 50%;
+    position: absolute;
+    top: 750px;
+    left: 320px;
+}
+
+.circle-container3 .circle .item,
+.circle-container3 .circle .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-container3 .circle .item {
+    clip: rect(0px, 150px, 150px, 64px);
+}
+
+.circle-container3 .circle .item .fill {
+    clip: rect(0px, 64px, 150px, 0px);
+    background-color: #8bd728;
+}
+
+.circle-container3 .circle .item.layer-1,
+.circle-container3 .circle .fill {
+    transform: rotate(156deg);
+}
+
+.inside-content3 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #f2d5e6;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130px;
+}
+
+
+/* bootstrap */
+
+.circle-container4 {
+    width: 150px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.221);
+    border-radius: 50%;
+    position: absolute;
+    top: 750px;
+    left: 710px;
+}
+
+.circle-container4 .circle .item,
+.circle-container4 .circle .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-container4 .circle .item {
+    clip: rect(0px, 150px, 150px, 64px);
+}
+
+.circle-container4 .circle .item .fill {
+    clip: rect(0px, 64px, 150px, 0px);
+    background-color: #15f88e;
+}
+
+.circle-container4 .circle .item.layer-1,
+.circle-container4 .circle .fill {
+    transform: rotate(136deg);
+}
+
+.inside-content4 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #f52a34;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130px;
+}
+
+
+/* django */
+
+.circle-container5 {
+    width: 150px;
+    height: 150px;
+    background: #c0bbbb;
+    border-radius: 50%;
+    position: absolute;
+    top: 750px;
+    left: 1090px;
+}
+
+.circle-container5 .circle .item,
+.circle-container5 .circle .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-container5 .circle .item {
+    clip: rect(0px, 150px, 150px, 64px);
+}
+
+.circle-container5 .circle .item .fill {
+    clip: rect(0px, 64px, 150px, 0px);
+    background-color: #ef1313;
+}
+
+.circle-container5 .circle .item.layer-1,
+.circle-container5 .circle .fill {
+    transform: rotate(160deg);
+}
+
+.inside-content5 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: rgb(9, 249, 97);
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130px;
+}
+
+
+/* Education and Experience */
+
+.edu_exp{
+    background-image: url("./images/skill_background.jpg");
+}
+
+.skill-head{
+    margin-bottom: 70px;
+    text-align: center;
+    font-weight: 100px;
+    font-size: 80px;
+    text-decoration: underline;
+}
+
+.edu-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.edu1,
+.edu2,
+.edu3,
+.edu4,
+.edu5,
+.edu6 {
+    width: 500px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.edu2,
+.edu4,
+.edu6 {
+    margin-top: 150px;
+}
+
+.edu1 h3,
+.edu2 h3,
+.edu3 h3,
+.edu4 h3,
+.edu5 h3,
+.edu6 h3 {
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.edu1 p,
+.edu2 p,
+.edu3 p,
+.edu4 p,
+.edu5 p,
+.edu6 p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.edu1 {
+    background-color: #24d241;
+}
+
+.edu2 {
+    background-color: #d25224;
+}
+
+.edu3 {
+    background-color: #2498d2;
+}
+
+.edu4 {
+    background-color: #d2246a;
+}
+
+.edu5 {
+    background-color: #d22424;
+}
+
+.edu6 {
+    background-color: #c7d224;
+}
+
+.hrline1,
+.hrline2,
+.hrline3,
+.hrline4,
+.hrline5,
+.hrline6 {
+    background-color: black;
+    width: 80px;
+    height: 7px;
+}
+
+.hrline4,
+.hrline5,
+.hrline6 {
+    width: 90px;
+}
+
+.hrline0 {
+    background-color: black;
+    width: 7px;
+    height: 850px;
+    position: absolute;
+    top: 400px;
+    left: 625px;
+}
+
+.hrline1 {
+    position: absolute;
+    top: 400px;
+    left: 545px;
+}
+
+.hrline2 {
+    position: absolute;
+    top: 740px;
+    left: 545px;
+}
+
+.hrline3 {
+    position: absolute;
+    top: 1090px;
+    left: 545px;
+}
+
+.hrline4 {
+    position: absolute;
+    top: 1250px;
+    left: 625px;
+}
+
+.hrline5 {
+    position: absolute;
+    top: 890px;
+    left: 625px;
+}
+
+.hrline6 {
+    position: absolute;
+    top: 540px;
+    left: 625px;
+}
+
+.circle1,
+.circle2,
+.circle3,
+.circle4,
+.circle5,
+.circle6 {
+    border: 5px solid black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 603px;
+}
+
+.circle1 {
+    top: 380px;
+    background-color: #24d241;
+}
+
+.circle2 {
+    top: 720px;
+    background-color: #2495d2;
+}
+
+.circle3 {
+    top: 1070px;
+    background-color: #d70909;
+}
+
+.circle4 {
+    top: 1230px;
+    background-color: #bdea1a;
+}
+
+.circle5 {
+    top: 870px;
+    background-color: #ed087e;
+}
+
+.circle6 {
+    top: 520px;
+    background-color: #e8580a;
+}
+
+.empty {
+    height: 100px;
+}
+
+
+/* Contact Page */
+
+.contact-form {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+
+.con-det {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#msg {
+    height: 100px;
+    width: 400px;
+    position: absolute;
+    left: 150px;
+    top: 400px;
+}
+
+.contact-details {
+    width: 600px;
+    height: 500px;
+    border: 5px solid black;
+    background-image: url(./images/contact_form_background.webp);
+}
+
+.location {
+    border: 5px solid black;
+    width: 510px;
+    height: 500px;
+    margin: auto;
+}
+
+#sub-btn {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    width: 200px;
+    position: absolute;
+    top: 520px;
+    left: 250px;
+}
+
+.inpt {
+    height: 40px;
+    font-size: 20px;
+}
+
+.contact {
+    background-size: cover;
+    background-color: rgb(132, 216, 235);
+}
+
+
+.home,
+.project,
+.about,
+.contact,
+.skill,
+.edu_exp {
+    display: none;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.active {
+    display: block;
+}
